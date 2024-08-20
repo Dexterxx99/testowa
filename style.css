@@ -1,0 +1,129 @@
+/* Stylizacje ogólne dla strony */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja nagłówka */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1c1c1c;
+    border-bottom: 4px solid #ff4081;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Stylizacja kontenera wyboru (rozwijane menu) */
+.select-container {
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    max-width: 600px;
+}
+
+/* Stylizacja etykiety dla rozwijanych menu */
+label {
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Stylizacja rozwijanych menu (select) */
+select {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 2px solid #ff4081;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Efekt hover dla rozwijanego menu */
+select:hover {
+    background-color: #ff4081;
+    color: #1c1c1c;
+    border-color: #ffffff;
+}
+
+/* Pseudoelement dla strzałki w rozwijanym menu */
+.select-container::after {
+    content: '▼';
+    color: #ffffff;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+/* Efekt focus (kliknięcie) dla rozwijanego menu */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 64, 129, 0.75);
+}
+
+/* Stylizacja kontenera sezonów i odcinków */
+.season-container, .episode-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.season-container select, .episode-container select {
+    width: 100%;
+}
+
+/* Stylizacja linków do filmów */
+.link-container a {
+    display: block;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-container a:hover {
+    background-color: #ff4081;
+    color: #1c1c1c;
+}
+
+/* Stylizacja stopki */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-top: 4px solid #ff4081;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+}
