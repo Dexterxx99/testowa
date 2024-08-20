@@ -14,14 +14,14 @@ document.getElementById('video-options').addEventListener('change', function() {
     episodeContainer.style.display = 'none';
 
     // Wypełnij sezonami odpowiedni kontener
-    if (selectedValue === 'lego-nexo-knights' || selectedValue === 'slugterra' || selectedValue === 'generator-rex' || selectedValue === 'lego-ninjago' || selectedValue === 'bakugan' || selectedValue === 'lego-chima') {
+    if (selectedValue === 'lego-nexo-knights' || selectedValue === 'slugterra' || selectedValue === 'generator-rex' || selectedValue === 'lego-ninjago' || selectedValue === 'bakugan' || selectedValue === 'chima') {
         const seasons = {
             'lego-nexo-knights': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
             'slugterra': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
             'generator-rex': ['Sezon 1', 'Sezon 2', 'Sezon 3'],
             'lego-ninjago': ['Sezon 1','Sezon 2','Sezon 3','Sezon 4','Sezon 5','Sezon 6','Sezon 7','Sezon 8','Sezon 9','Sezon 10','Sezon 11','Sezon 12','Sezon 13','Sezon 14','Sezon 15','Sezon 16'],
             'bakugan': ['Sezon 1','Sezon 2','Sezon 3','Sezon 4'],
-            'lego-chima': ['sezon 1','Sezon 2','Sezon 3']
+            'chima': ['Sezon 1','Sezon 2','Sezon 3']
         };
 
         seasonSelect.innerHTML = ''; // Czyści poprzednie sezony
@@ -95,10 +95,11 @@ function populateEpisodes(series, season) {
             'season3': Array.from({ length:39}, (_, i) => `Odcinek ${i + 1}`),
             'season4': Array.from({ length:46}, (_, i) => `Odcinek ${i + 1}`),
         },
-        'lego-chima': {
+        'chima': {
             'season1': Array.from({ length:20}, (_, i) => `Odcinek ${i + 1}`),
             'season2': Array.from({ length:6}, (_, i) => `Odcinek ${i + 1}`),
             'season3': Array.from({ length:15}, (_, i) => `Odcinek ${i + 1}`),
+        }
     };
 
     const selectedEpisodes = episodes[series][season || ''];
@@ -619,16 +620,16 @@ function getVideoUrl(series, season, episode) {
         },
         'bakugan': {
             'season1': {
-                'odcinek-1': 'https://www.youtube.com/watch?v=1Y_1RMOTasY',
-                'odcinek-2': 'https://www.youtube.com/watch?v=BIpbrhDkcao',
-                'odcinek-3': 'https://www.youtube.com/watch?v=RRqLDrQ-lF8',
-                'odcinek-4': 'https://www.youtube.com/watch?v=p_AH-9NaFlo',
-                'odcinek-5': 'https://www.youtube.com/watch?v=Ms6mjcQhlXY',
-                'odcinek-6': 'https://www.youtube.com/watch?v=BSndb4b5c8s',
-                'odcinek-7': 'https://www.youtube.com/watch?v=F66u_jW8VbY',
-                'odcinek-8': 'https://www.youtube.com/watch?v=3tScqBtuPoU',
-                'odcinek-9': 'https://www.youtube.com/watch?v=qLLCCDtJ-Y0',
-                'odcinek-10': 'https://www.youtube.com/watch?v=rv1uXxQuWss',
+                'odcinek-1': 'https://www.youtube.com/watch?v=GbpGytJ9nCA',
+                'odcinek-2': 'https://www.youtube.com/watch?v=F6kaVFHPT6w',
+                'odcinek-3': 'https://www.youtube.com/watch?v=64ba0-qNTXY',
+                'odcinek-4': 'https://www.youtube.com/watch?v=9jxFIjpK0qA',
+                'odcinek-5': 'https://www.youtube.com/watch?v=I4nyFObTGt0',
+                'odcinek-6': 'https://www.youtube.com/watch?v=7Vr7ZVlkqgg',
+                'odcinek-7': 'https://www.youtube.com/watch?v=ot92VHoq_k8',
+                'odcinek-8': 'https://www.youtube.com/watch?v=ZSqdPU6eQhQ',
+                'odcinek-9': 'https://www.youtube.com/watch?v=QVpbIbKgu14',
+                'odcinek-10': 'https://www.youtube.com/watch?v=yYhr4yuTX5M',
                 'odcinek-11': 'https://www.youtube.com/watch?v=GbpGytJ9nCA',
                 'odcinek-12': 'https://www.youtube.com/watch?v=F6kaVFHPT6w',
                 'odcinek-13': 'https://www.youtube.com/watch?v=64ba0-qNTXY',
@@ -817,8 +818,9 @@ function getVideoUrl(series, season, episode) {
                 'odcinek-45': 'https://www.youtube.com/watch?v=I4nyFObTGt0',
                 'odcinek-46': 'https://www.youtube.com/watch?v=7Vr7ZVlkqgg'
                
-            },
-            'lego-chima': {
+            }
+        },
+        'chima': {
             'season1': {
                 'odcinek-1': 'https://drive.google.com/file/d/1Rqw5Lv511h0g5ZzquzF_H39AtFeLtEH0/view',
                 'odcinek-2': 'https://drive.google.com/file/d/1T7_vlRKnEvBWkLrrXq-7VayfV-tVpuk0/view',
@@ -847,8 +849,8 @@ function getVideoUrl(series, season, episode) {
                 'odcinek-3': 'https://drive.google.com/file/d/1AV4623f9LU7GV0jBj89zctyUkPGJE7EE/view',
                 'odcinek-4': 'https://drive.google.com/file/d/1Dh93JGGE7FJNF5owZDVFZoaI9CONiRft/view',
                 'odcinek-5': 'https://drive.google.com/file/d/1fMtdGdbNimGeeWl49aVqRxZz41IYv0BX/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1vv9ZodDpPR_7eIz6e6K2jjxpTTB5G-R2/view',
-            
+                'odcinek-6': 'https://drive.google.com/file/d/1vv9ZodDpPR_7eIz6e6K2jjxpTTB5G-R2/view'
+                
             },
             'season3': {
                 'odcinek-1': 'https://drive.google.com/file/d/103XlLrpaG_La16pg1t4JcIoj0cAqMTRa/view',
@@ -865,10 +867,9 @@ function getVideoUrl(series, season, episode) {
                 'odcinek-12': 'https://drive.google.com/file/d/1l3hhnyXy89x0hgb7jXz7lvp9rW6-3_zv/view',
                 'odcinek-13': 'https://drive.google.com/file/d/1adMEZUXpTH7xZ3MNxy9MJYVQsz4f5eLB/view',
                 'odcinek-14': 'https://drive.google.com/file/d/17L0uV9f_w4yPEn0xBH58roWpSIRh5NrY/view',
-                'odcinek-15': 'https://drive.google.com/file/d/1F28z-VU9CnI9-tuqeYjaHAAA5ZMWaSCy/view',
-               
+                'odcinek-15': 'https://drive.google.com/file/d/1F28z-VU9CnI9-tuqeYjaHAAA5ZMWaSCy/view'
+                
             }
-        
         }
 
     };
