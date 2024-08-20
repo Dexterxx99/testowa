@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Witaj na mojej stronie</h1>
+    </header>
+
+    <section class="select-container">
+        <label for="video-options">Co chcesz obejrzeć?</label>
+        <select id="video-options" name="videos">
+            <option value="" selected disabled>Wybierz</option>
+            <option value="lego-nexo-knights">Lego Nexo Knights</option>
+            <option value="slugterra">Slugterra</option>
+            <option value="generator-rex">Generator Rex</option>
+            <option value="lego-ninjago">Lego Ninjago</option>
+        </select>
+    </section>
+
+    <section class="select-container" id="season-container" style="display: none;">
+        <label for="season-options">Wybierz sezon:</label>
+        <select id="season-options" name="seasons">
+            <!-- Opcje sezonów będą dodane dynamicznie przez JavaScript -->
+        </select>
+    </section>
+
+    <section class="select-container" id="episode-container" style="display: none;">
+        <label for="episode-options">Wybierz odcinek:</label>
+        <select id="episode-options" name="episodes">
+            <!-- Opcje odcinków będą dodane dynamicznie przez JavaScript -->
+        </select>
+    </section>
+
+    <section class="link-container">
+        <div id="video-links">
+            <!-- Linki do filmów będą dodane dynamicznie przez JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dexter. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
