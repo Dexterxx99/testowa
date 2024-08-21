@@ -844,12 +844,12 @@ function getVideoUrl(series, season, episode) {
                 'odcinek-20': 'https://www.youtube.com/watch?v=dkjzMYWmQiM'
             },
             'season2': {
-                'odcinek-1': 'https://drive.google.com/file/d/1mUQTRI7k_5tsNoBCpD34HSzEU9yr_-2Q/view',
-                'odcinek-2': 'https://drive.google.com/file/d/1m-Nie6tZQ3cHgJPPaAgqnLgjjOp5n8HK/view',
-                'odcinek-3': 'https://drive.google.com/file/d/1AV4623f9LU7GV0jBj89zctyUkPGJE7EE/view',
-                'odcinek-4': 'https://drive.google.com/file/d/1Dh93JGGE7FJNF5owZDVFZoaI9CONiRft/view',
-                'odcinek-5': 'https://drive.google.com/file/d/1fMtdGdbNimGeeWl49aVqRxZz41IYv0BX/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1vv9ZodDpPR_7eIz6e6K2jjxpTTB5G-R2/view'
+                'odcinek-1': 'https://www.youtube.com/watch?v=3o2NyRPYQk8',
+                'odcinek-2': 'https://www.youtube.com/watch?v=v7EAtl7mvOE',
+                'odcinek-3': 'https://www.youtube.com/watch?v=2ycTBUUpeAM',
+                'odcinek-4': 'https://www.youtube.com/watch?v=9gu_CNGqPnc',
+                'odcinek-5': 'https://www.youtube.com/watch?v=-BE6IjQ5EgU',
+                'odcinek-6': 'https://www.youtube.com/watch?v=OoHMKOihIX8'
                 
             },
             'season3': {
