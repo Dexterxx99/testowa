@@ -853,21 +853,21 @@ function getVideoUrl(series, season, episode) {
                 
             },
             'season3': {
-                'odcinek-1': 'https://drive.google.com/file/d/103XlLrpaG_La16pg1t4JcIoj0cAqMTRa/view',
-                'odcinek-2': 'https://drive.google.com/file/d/103XlLrpaG_La16pg1t4JcIoj0cAqMTRa/view',
-                'odcinek-3': 'https://drive.google.com/file/d/1-vF_WAVNrwz4heN4ziKkGpGBZekhDqNN/view',
-                'odcinek-4': 'https://drive.google.com/file/d/1iE1VdJfQ7kGhfcfBuyinQmFIbqRD9nSg/view',
-                'odcinek-5': 'https://drive.google.com/file/d/1jNWpNnO4V_fil5W1ug5IAKX79y7ZaUWI/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1YL1WYxpzns7x3113quA2NJ7BmPa64C9s/view',
-                'odcinek-7': 'https://drive.google.com/file/d/1TafHfptncF4IqEvYAl0XL58P9ZI5fevH/view',
-                'odcinek-8': 'https://drive.google.com/file/d/1IVSoT_Lt6QmESY8w9XujGM9k-OPrEo_B/view',
-                'odcinek-9': 'https://drive.google.com/file/d/1nQUA4rwSnv_AuzHN1PaC92UIA07tl7Hn/view',
-                'odcinek-10': 'https://drive.google.com/file/d/1-hspaL367FrRRQMkNfNB_4LrFP4QXduL/view',
-                'odcinek-11': 'https://drive.google.com/file/d/1l3hhnyXy89x0hgb7jXz7lvp9rW6-3_zv/view',
-                'odcinek-12': 'https://drive.google.com/file/d/1l3hhnyXy89x0hgb7jXz7lvp9rW6-3_zv/view',
-                'odcinek-13': 'https://drive.google.com/file/d/1adMEZUXpTH7xZ3MNxy9MJYVQsz4f5eLB/view',
-                'odcinek-14': 'https://drive.google.com/file/d/17L0uV9f_w4yPEn0xBH58roWpSIRh5NrY/view',
-                'odcinek-15': 'https://drive.google.com/file/d/1F28z-VU9CnI9-tuqeYjaHAAA5ZMWaSCy/view'
+                'odcinek-1': 'https://www.youtube.com/watch?v=hW9g4fE81sE',
+                'odcinek-2': 'https://www.youtube.com/watch?v=k3jZxhbcRtE',
+                'odcinek-3': 'https://www.youtube.com/watch?v=NjdfW1-g2HU',
+                'odcinek-4': 'https://www.youtube.com/watch?v=rsd7HHaYs4c',
+                'odcinek-5': 'https://www.youtube.com/watch?v=-JlJHrXBzGg',
+                'odcinek-6': 'https://www.youtube.com/watch?v=RVSzpAMHDxY',
+                'odcinek-7': 'https://www.youtube.com/watch?v=ALTaZ_XdLCU',
+                'odcinek-8': 'https://www.youtube.com/watch?v=QU_ef0oKbSA',
+                'odcinek-9': 'https://www.youtube.com/watch?v=Hf7HBogVAPw',
+                'odcinek-10': 'https://www.youtube.com/watch?v=1LkAOJlX2Bg',
+                'odcinek-11': 'https://www.youtube.com/watch?v=zXJcQN30MB4',
+                'odcinek-12': 'https://www.youtube.com/watch?v=3VBVX7_d8e8',
+                'odcinek-13': 'https://www.youtube.com/watch?v=ay_bX7G-dYc',
+                'odcinek-14': 'https://www.youtube.com/watch?v=AFYgvKZrXfs',
+                'odcinek-15': 'https://www.youtube.com/watch?v=9MQcbJV0yeI'
                 
             }
         }
