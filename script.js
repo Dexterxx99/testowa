@@ -149,28 +149,28 @@ function getVideoUrl(series, season, episode) {
     const urls = {
         'lego-nexo-knights': {
             'season1': {
-                'odcinek-1': 'https://www.youtube.com/watch?v=GbpGytJ9nCA',
-                'odcinek-2': 'https://www.youtube.com/watch?v=F6kaVFHPT6w',
-                'odcinek-3': 'https://www.youtube.com/watch?v=64ba0-qNTXY',
-                'odcinek-4': 'https://www.youtube.com/watch?v=9jxFIjpK0qA',
-                'odcinek-5': 'https://www.youtube.com/watch?v=I4nyFObTGt0',
-                'odcinek-6': 'https://www.youtube.com/watch?v=7Vr7ZVlkqgg',
-                'odcinek-7': 'https://www.youtube.com/watch?v=ot92VHoq_k8',
-                'odcinek-8': 'https://www.youtube.com/watch?v=ZSqdPU6eQhQ',
-                'odcinek-9': 'https://www.youtube.com/watch?v=QVpbIbKgu14',
-                'odcinek-10': 'https://www.youtube.com/watch?v=yYhr4yuTX5M'
+                'odcinek-1': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-2': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-3': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-4': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-5': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-6': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-7': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-8': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-9': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-10': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view'
             },
             'season2': {
-                'odcinek-1': 'https://www.youtube.com/watch?v=7K3urTkOsQ0',
-                'odcinek-2': 'https://www.youtube.com/watch?v=2HG7Q1gnKnE',
-                'odcinek-3': 'https://www.youtube.com/watch?v=dJxcEtol7ZY',
-                'odcinek-4': 'https://www.youtube.com/watch?v=9sMDxGKJ4dE',
-                'odcinek-5': 'https://www.youtube.com/watch?v=MgsSPvPub0c',
-                'odcinek-6': 'https://www.youtube.com/watch?v=PHpMVhDkKFU',
-                'odcinek-7': 'https://www.youtube.com/watch?v=QSn7qbFk4R0',
-                'odcinek-8': 'https://www.youtube.com/watch?v=Z2dSKVkAvlg',
-                'odcinek-9': 'https://www.youtube.com/watch?v=cqOqCFuJsuk',
-                'odcinek-10': 'https://www.youtube.com/watch?v=0WVscb3O7N8'
+                'odcinek-1': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-2': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-3': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-4': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-5': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-6': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-7': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-8': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-9': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view',
+                'odcinek-10': 'https://drive.google.com/file/d/1e7rkIlS6Z6xmCCGZUPUes3CdBKxZMpO7/view'
             },
             'season3': {
                 'odcinek-1': 'https://www.youtube.com/watch?v=example21',
