@@ -14,7 +14,7 @@ document.getElementById('video-options').addEventListener('change', function() {
     episodeContainer.style.display = 'none';
 
     // Wypełnij sezonami odpowiedni kontener
-    if (selectedValue === 'lego-nexo-knights' || selectedValue === 'slugterra' || selectedValue === 'generator-rex' || selectedValue === 'lego-ninjago' || selectedValue === 'bakugan' || selectedValue === 'chima') {
+    if (['lego-nexo-knights', 'slugterra', 'generator-rex', 'lego-ninjago', 'bakugan', 'chima'].includes(selectedValue)) {
         const seasons = {
             'lego-nexo-knights': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
             'slugterra': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
@@ -119,6 +119,7 @@ function populateEpisodes(series, season) {
         if (episodeSelect.options.length > 0) {
             episodeSelect.value = episodeSelect.options[0].value;
             updateVideoLinks(series, season, episodeSelect.value);
+            updateNavigationButtons(episodeSelect);
         }
     } else {
         episodeContainer.style.display = 'none';
@@ -127,6 +128,7 @@ function populateEpisodes(series, season) {
     episodeSelect.addEventListener('change', function() {
         const selectedEpisode = this.value;
         updateVideoLinks(series, season, selectedEpisode);
+        updateNavigationButtons(this);
     });
 }
 
@@ -141,6 +143,30 @@ function updateVideoLinks(series, season, episode) {
     videoLinks.appendChild(link);
 
     videoLinks.style.display = 'block';
+}
+
+function updateNavigationButtons(episodeSelect) {
+    const prevButton = document.getElementById('prev-episode');
+    const nextButton = document.getElementById('next-episode');
+
+    const currentIndex = Array.from(episodeSelect.options).findIndex(option => option.value === episodeSelect.value);
+
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex === episodeSelect.options.length - 1;
+
+    prevButton.onclick = function() {
+        if (currentIndex > 0) {
+            episodeSelect.selectedIndex = currentIndex - 1;
+            episodeSelect.dispatchEvent(new Event('change'));
+        }
+    };
+
+    nextButton.onclick = function() {
+        if (currentIndex < episodeSelect.options.length - 1) {
+            episodeSelect.selectedIndex = currentIndex + 1;
+            episodeSelect.dispatchEvent(new Event('change'));
+        }
+    };
 }
 
 
