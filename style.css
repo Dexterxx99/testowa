@@ -127,3 +127,24 @@ p {
     margin: 0;
     font-size: 1rem;
 }
+.support-button {
+    display: block;
+    background-color: #ff4081;
+    color: #1c1c1c;
+    padding: 15px 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.support-button:hover {
+    background-color: #1c1c1c;
+    color: #ff4081;
+    border-color: #ff4081;
+}
