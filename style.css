@@ -112,6 +112,30 @@ select:focus {
     color: #1c1c1c;
 }
 
+/* Stylizacja przycisków nawigacyjnych */
+button {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 2px solid #ff4081;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #333333;
+    border-color: #666666;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ff4081;
+    color: #1c1c1c;
+}
+
 /* Stylizacja stopki */
 footer {
     text-align: center;
@@ -127,6 +151,8 @@ p {
     margin: 0;
     font-size: 1rem;
 }
+
+/* Stylizacja przycisku wspierającego */
 .support-button {
     display: block;
     background-color: #ff4081;
