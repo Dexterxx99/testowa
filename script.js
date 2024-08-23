@@ -14,15 +14,14 @@ document.getElementById('video-options').addEventListener('change', function() {
     episodeContainer.style.display = 'none';
 
     // Wypełnij sezonami odpowiedni kontener
-    if (['lego-nexo-knights', 'slugterra', 'generator-rex', 'lego-ninjago', 'bakugan', 'chima', 'danny'].includes(selectedValue)) {
+    if (['lego-nexo-knights', 'slugterra', 'generator-rex', 'lego-ninjago', 'bakugan', 'chima'].includes(selectedValue)) {
         const seasons = {
             'lego-nexo-knights': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
             'slugterra': ['Sezon 1', 'Sezon 2', 'Sezon 3', 'Sezon 4'],
             'generator-rex': ['Sezon 1', 'Sezon 2', 'Sezon 3'],
             'lego-ninjago': ['Sezon 1','Sezon 2','Sezon 3','Sezon 4','Sezon 5','Sezon 6','Sezon 7','Sezon 8','Sezon 9','Sezon 10','Sezon 11','Sezon 12','Sezon 13','Sezon 14','Sezon 15','Sezon 16'],
             'bakugan': ['Sezon 1','Sezon 2','Sezon 3','Sezon 4'],
-            'chima': ['Sezon 1','Sezon 2','Sezon 3'],
-            'danny': ['Sezon 1','Sezon 2','Sezon 3']
+            'chima': ['Sezon 1','Sezon 2','Sezon 3']
         };
 
         seasonSelect.innerHTML = ''; // Czyści poprzednie sezony
@@ -100,12 +99,7 @@ function populateEpisodes(series, season) {
             'season1': Array.from({ length:20}, (_, i) => `Odcinek ${i + 1}`),
             'season2': Array.from({ length:6}, (_, i) => `Odcinek ${i + 1}`),
             'season3': Array.from({ length:15}, (_, i) => `Odcinek ${i + 1}`),
-        },
-        'danny': {
-            'season1': Array.from({ length:20}, (_, i) => `Odcinek ${i + 1}`),
-            'season2': Array.from({ length:18}, (_, i) => `Odcinek ${i + 1}`),
-            'season3': Array.from({ length:7}, (_, i) => `Odcinek ${i + 1}`),
-
+        }
     };
 
     const selectedEpisodes = episodes[series][season || ''];
@@ -174,6 +168,7 @@ function updateNavigationButtons(episodeSelect) {
         }
     };
 }
+
 
 
 function getVideoUrl(series, season, episode) {
@@ -902,66 +897,31 @@ function getVideoUrl(series, season, episode) {
                 'odcinek-15': 'https://drive.google.com/file/d/1Cv9OhM0kAAxDxdKwdNau-_-g3znBCjMS/view'
                 
             }
-        },
-        'danny': {
-            'season1': {
-                'odcinek-1': 'https://drive.google.com/file/d/1AZanfbUqzef5w1zYoQaZ2LEz_cguU3_w/view',
-                'odcinek-2': 'https://drive.google.com/file/d/1A_71B1acmreeyj1HC7BeSplV-pCR793O/view',
-                'odcinek-3': 'https://drive.google.com/file/d/1Aabxwj_P3GL5-GtMwVnkSai5tu_-jlN-/view',
-                'odcinek-4': 'https://drive.google.com/file/d/1AcFHxVt49tTgZEj6A6QChPuCrsGLATLK/view',
-                'odcinek-5': 'https://drive.google.com/file/d/1AdHYUotXrOOSEDQ4f-QNRzSQFTbTWhiv/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1AlKyVfbe29AzsIQ8BnyTRBlXxqiyKInd/view',
-                'odcinek-7': 'https://drive.google.com/file/d/1Ao7-iYAZwA2IXn_s4TvY2hFGSbSdthIm/view',
-                'odcinek-8': 'https://drive.google.com/file/d/1AsqjB44HXt_gnkpKbVRpc7XsA2BBYX_T/view',
-                'odcinek-9': 'https://drive.google.com/file/d/1AxzASoH9Mhok215A9bBgqT-3-y_bHtOu/view',
-                'odcinek-10': 'https://drive.google.com/file/d/1AyKPdy1bsTrKNYyVKe8b19-uC2C2DQ9o/view',
-                'odcinek-11': 'https://drive.google.com/file/d/1B40dIZH3D9MalbgUQshUjc_pnHjlrfv_/view',
-                'odcinek-12': 'https://drive.google.com/file/d/1BCLBpeXmW_hLNaG1xCScWuZ5XePwoEfL/view',
-                'odcinek-13': 'https://drive.google.com/file/d/1BCVQi8YL4E8Ap9FmnPNc4QB4YhfTbL2g/view',
-                'odcinek-14': 'https://drive.google.com/file/d/1BFKuHHwGjrQ0YpOXxe7Akaln1u3qeKtN/view',
-                'odcinek-15': 'https://drive.google.com/file/d/1BLbPWTRA_9XzmG6ALkoR_poZotdInrhY/view',
-                'odcinek-16': 'https://drive.google.com/file/d/1BVDUGs3cyl6uNrHFMA_HXWVpP7bGwYtA/view',
-                'odcinek-17': 'https://drive.google.com/file/d/1BVL-v-slMj2U5yfBURC1K4R4LWUROVqQ/view',
-                'odcinek-18': 'https://drive.google.com/file/d/1BVuISQGb3osC7-_PkQP4q1R_Xehje-fY/view',
-                'odcinek-19': 'https://drive.google.com/file/d/1BbRAOILkHkTGQfcIjXEqqw0BYSscZ6uK/view',
-                'odcinek-20': 'https://drive.google.com/file/d/1BdbBmQu-WfeoHVg_5WT-OxwH2-XRw-NT/view'
-            },
-            'season2': {
-                'odcinek-1': 'https://drive.google.com/file/d/1BfFcvLtHRUOgiKoc1TgggbT0v-QibPuh/view',
-                'odcinek-2': 'https://drive.google.com/file/d/1BkAjY2o3JNTN6s1aSqX1ZZ6hrzefuCg5/view',
-                'odcinek-3': 'https://drive.google.com/file/d/1BmTe3230tQbZ047IdFA0n30Ubh0ZIZEJ/view',
-                'odcinek-4': 'https://drive.google.com/file/d/1Bp0nKIkbUNdThbnxUAJqhq-N-rhrM6tr/view',
-                'odcinek-5': 'https://drive.google.com/file/d/1BpF1ubVUiI1S-GeDBreyTXnRI7we1m6g/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1BsWfSda-1OP26Fc354q-W0cjed1W4KYd/view',
-                'odcinek-7': 'https://drive.google.com/file/d/1Ao7-iYAZwA2IXn_s4TvY2hFGSbSdthIm/view',
-                'odcinek-8': 'https://drive.google.com/file/d/1AsqjB44HXt_gnkpKbVRpc7XsA2BBYX_T/view',
-                'odcinek-9': 'https://drive.google.com/file/d/1AxzASoH9Mhok215A9bBgqT-3-y_bHtOu/view',
-                'odcinek-10': 'https://drive.google.com/file/d/1AyKPdy1bsTrKNYyVKe8b19-uC2C2DQ9o/view',
-                'odcinek-11': 'https://drive.google.com/file/d/1B40dIZH3D9MalbgUQshUjc_pnHjlrfv_/view',
-                'odcinek-12': 'https://drive.google.com/file/d/1BCLBpeXmW_hLNaG1xCScWuZ5XePwoEfL/view',
-                'odcinek-13': 'https://drive.google.com/file/d/1BCVQi8YL4E8Ap9FmnPNc4QB4YhfTbL2g/view',
-                'odcinek-14': 'https://drive.google.com/file/d/1BFKuHHwGjrQ0YpOXxe7Akaln1u3qeKtN/view',
-                'odcinek-15': 'https://drive.google.com/file/d/1BLbPWTRA_9XzmG6ALkoR_poZotdInrhY/view',
-                'odcinek-16': 'https://drive.google.com/file/d/1BVDUGs3cyl6uNrHFMA_HXWVpP7bGwYtA/view',
-                'odcinek-17': 'https://drive.google.com/file/d/1BVL-v-slMj2U5yfBURC1K4R4LWUROVqQ/view',
-                'odcinek-18': 'https://drive.google.com/file/d/1BVuISQGb3osC7-_PkQP4q1R_Xehje-fY/view'
-                
-            },
-            'season3': {
-                'odcinek-1': 'https://drive.google.com/file/d/1Bz5qynOG0MWJlo08zGACnh_6_l1h88Ug/view',
-                'odcinek-2': 'https://drive.google.com/file/d/1C2kjxCYsHwe2rGexcbgdA4GkvOlsZc4M/view',
-                'odcinek-3': 'https://drive.google.com/file/d/1C4xB7nTDkL7NY_HcafKKKjw0rAP9JuDY/view',
-                'odcinek-4': 'https://drive.google.com/file/d/1C6rrNyz91faa46o8v-VOw5p7NxB2PFxf/view',
-                'odcinek-5': 'https://drive.google.com/file/d/1CA59WkuY2Dlgjd-xT7IzlO11M7Ob3hwd/view',
-                'odcinek-6': 'https://drive.google.com/file/d/1CGOLxKRZ3GTCB3DeLuJCHyDAHgvz2i3Q/view',
-                'odcinek-7': 'https://drive.google.com/file/d/1CH5PF7I-dK9jzIJyz0Ge_-srxR7CSFdQ/view'
-                
-                
-            }
         }
-        
 
     };
 
     return urls[series] && urls[series][season] && urls[series][season][episode] || '#';
 }
+// Konfiguracja celu i aktualnej kwoty
+const fundraisingGoal = 53; // Ustaw tutaj docelową kwotę
+let fundraisingAmount = 0.77; // Ustaw tutaj zebrane środki
+
+// Inicjalizacja licznika
+function updateFundraisingDisplay() {
+    const goalElement = document.getElementById('fundraising-goal');
+    const amountElement = document.getElementById('fundraising-amount');
+    const totalElement = document.getElementById('fundraising-total');
+    const progressBar = document.getElementById('progress-bar');
+
+    goalElement.textContent = fundraisingGoal + " PLN";
+    amountElement.textContent = fundraisingAmount + " PLN";
+    totalElement.textContent = fundraisingGoal + " PLN";
+
+    // Obliczanie postępu
+    const progressPercentage = (fundraisingAmount / fundraisingGoal) * 100;
+    progressBar.style.width = progressPercentage + "%";
+}
+
+// Wywołanie funkcji na starcie
+updateFundraisingDisplay();
