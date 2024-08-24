@@ -966,7 +966,7 @@ function getVideoUrl(series, season, episode) {
 }
 // Konfiguracja celu i aktualnej kwoty
 const fundraisingGoal = 53; // Ustaw tutaj docelową kwotę
-let fundraisingAmount = 0.77; // Ustaw tutaj zebrane środki
+let fundraisingAmount = 10.27; // Ustaw tutaj zebrane środki
 
 // Inicjalizacja licznika
 function updateFundraisingDisplay() {
